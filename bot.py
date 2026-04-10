@@ -26,6 +26,8 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
+telebot.apihelper.API_URL = "https://api.telegram.org/bot{0}/{1}"
+telebot.apihelper.FILE_URL = "https://api.telegram.org/file/bot{0}/{1}"
 bot = telebot.TeleBot(BOT_TOKEN, parse_mode="HTML")
 app = FastAPI(title="TG FileLink Bot")
 
