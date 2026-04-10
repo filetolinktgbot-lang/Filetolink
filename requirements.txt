@@ -1,6 +1,5 @@
-fastapi[standard]
-pyrogram
-tgcrypto
-python-dotenv
-python-magic
-motor
+pyTelegramBotAPI==4.18.0
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+httpx==0.27.0
+python-multipart==0.0.9
