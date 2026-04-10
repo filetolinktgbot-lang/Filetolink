@@ -174,8 +174,8 @@ async def handle_file(event):
         f"📄 <b>Name:</b> <code>{file_name}</code>\n"
         f"💾 <b>Size:</b> {human_size(file_size)}\n"
         f"🔠 <b>Type:</b> {mime_type}\n\n"
-        f"🔗 <b>Download link:</b>\n<code>{dl_link}</code>\n\n"
-        f"🌐 <b>Info page:</b>\n<code>{pg_link}</code>",
+        f"🔗 <b>Download link:</b>\n<a href='{dl_link}'>{dl_link}</a>\n\n"
+        f"🌐 <b>Info page:</b>\n<a href='{pg_link}'>{pg_link}</a>",
         parse_mode="html",
     )
 
